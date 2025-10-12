@@ -1,0 +1,88 @@
+body {
+  background-color: beige;
+  color: rgb(0, 0, 0);
+}
+
+.Nomes {
+  font-weight: bold;
+  text-align: center;
+}
+
+.fotominha {
+  width: 200px;
+  border-radius: 15px;
+  border: 3px solid white;
+  transition: transform 0.3s ease;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+.Jogadores {
+  display: flex;
+  gap: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  border: solid white;
+  margin-top: 30px;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+  transition: transform 0.3s ease;
+  margin-left: 50px;
+  margin-right: 950px;
+}
+
+.Jogadores:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.fotominha:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.Inicio {
+  align-items: center;
+  text-align: center
+}
+
+#LogoTitulo {
+  height: 300px;
+}
+
+#textoEndou {
+  flex: 1;
+  font-family: "EB Garamond", serif;
+  font-size: 16px;
+
+}
+
+#textoGouenji {
+  flex: 1;
+  font-family: "EB Garamond", serif;
+  font-size: 16px;
+
+}
+
+#textoKidou {
+  flex: 1;
+  font-family: "EB Garamond", serif;
+  font-size: 16px;
+
+}
+
+#textoAphrodi {
+  flex: 1;
+  font-family: "EB Garamond", serif;
+  font-size: 16px;
+
+}
+
+#textoFubuki {
+  flex: 1;
+  font-family: "EB Garamond", serif;
+  font-size: 16px;
+
+}
