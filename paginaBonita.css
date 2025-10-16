@@ -1,0 +1,144 @@
+/* --- RESET BÁSICO --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- CONTAINER PRINCIPAL --- */
+#conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 colunas */
+  gap: 20px; /* espaço entre as colunas */
+  padding: 20px;
+  margin: 0 auto; /* centraliza na tela */
+  background-color: lightskyblue;
+}
+
+/* --- SECTIONS --- */
+section {
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background-color: #222;
+  color: #ffffff;
+}
+
+/* --- TÍTULOS --- */
+section h1 {
+  text-align: center;
+  margin-bottom: 15px;
+  padding-top: 10px;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  padding-top: 10px;
+}
+
+/* --- LISTA DE JOGADORES (imagens) --- */
+.listaDeJogadores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.listaDeJogadores img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border: solid black 1px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.listaDeTimes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.listaDeJogadores img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.listaDeJogadores img.selecionado {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(255, 165, 0, 0.8);
+}
+.listaDeTimes img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border: solid black 1px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.listaDeTimes img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.listaDeTimes img.selecionado {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(255, 165, 0, 0.8);
+}
+
+.jogadores {
+    margin-left: 300px;
+    border-radius: 12px;
+}
+
+.extraJogadores {
+    margin-right: 300px;
+    border-radius: 12px;
+}
+
+/* --- ÁREA EXTRA --- */
+#extraJogadores {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#extraJogadores img{
+    height: 300px;
+}
+
+/* --- RESPONSIVO --- */
+@media (max-width: 800px) {
+  #conteudo {
+    grid-template-columns: 1fr; /* empilha em uma coluna */
+  }
+}
+
+.Inicio {
+  align-items: center;
+  text-align: center;
+  background-color: #222;
+  padding: 20px;
+  color: #ffffff;
+}
+
+#LogoTitulo {
+  height: 300px;
+}
+
+footer {
+  background-color: lightskyblue;
+  padding: 30px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #222;
+}
